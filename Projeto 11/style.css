@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+    font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
+
+    --color-base-gray-99: #8D8D99;
+    --color-base-black-24: #202024;
+    --color-base-gray-3D: #3D3D3D;
+    --color-base-black-38: #323238;
+    --color-base-gray-f5:#F5F5F5;
+    --color-base-white-ee: #EEE;
+}
+
+.app{
+    display: grid;
+    grid-template-rows:max-content 1fr max-content;
+    height: 100vh;
+}
+
+.container{
+    padding: 1.6rem 3.2rem;
+    width: min(112rem, 100%);
+    margin: 0 auto;
+}
+
+main{
+    overflow-y: scroll;
+    background: var(--color-base-gray-f5);
+}
+
+header, nav, nav ul{
+    display: flex;
+    align-items: center;
+    gap: 7.2rem;
+}
+
+form{
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 1.8rem;
+    color: var(--color-base-gray-99);
+    font-weight: 700;
+    line-height: 2.8rem;
+}
+
+nav ul :hover{
+    color: var(--color-base-black-24);
+}
+
+.avatar{
+    height: 4.2rem;
+    width: 4.2rem;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+footer p{
+    text-align: center;
+    padding: 1.6rem;
+    color: var(--color-base-black-38);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.input-wrapper label{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.input-wrapper input{
+    width: 100%;
+    padding: 1.2rem 1.6rem;
+
+    font-size: 16px;
+    line-height: 1.6rem;
+    font-weight: 600;
+
+    font-family: 'Mulish', sans-serif;
+
+    background: var(--color-base-white-ee);
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.input-wrapper input::placeholder {
+    color: var(--color-base-gray-3D);
+}
